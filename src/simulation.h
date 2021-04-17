@@ -1085,6 +1085,7 @@ public:
 
     void useBerserking()
     {
+        state->mana-= 134; // 2241*0.06
         onCooldownGain(make_shared<cooldown::Berserking>());
         onBuffGain(make_shared<buff::Berserking>());
     }
